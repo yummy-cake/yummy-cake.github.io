@@ -7,12 +7,6 @@
   <base href="file:/C:/Yummyimg/">
   <title>Donas - Yummy Cake</title>
   <style>
-    #test {
-      color: transparent;
-      position: absolute;
-      top: 300px;
-    }
-
     #frmbuscar {
       position: absolute;
       top: 5vh;
@@ -46,7 +40,7 @@
       float: left;
       color: black;
       text-align: center;
-      padding: 1.3vh 5.3vw;
+      padding: 1.3vh 5.25vw;
       text-decoration: none;
       font-size: 1.23vw;
     }
@@ -61,7 +55,7 @@
       position: absolute;
       width: 100px;
       margin-left: -50px;
-      left: 50%;
+      left: 48%;
       top: 17vh;
       font-size: 3em;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,12 +96,24 @@
       background: rgb(255, 205, 155);
     }
 
+
     .divdona {
-      width: 35vw;
-      height: 17.5vw;
+      width: 40vw;
+      height: 20vw;
       background: #ff9861;
       position: absolute;
       top: 37vh;
+      margin-left: 4vw;
+    }
+
+    .divdona form {
+      position: absolute;
+      left: 65%;
+      bottom: 20%;
+    }
+
+    .divdona form input {
+      background-color: #ff6961;
     }
 
     .imgdona {
@@ -117,9 +123,22 @@
 
     .txtdona {
       font-size: 1.8vw;
-      margin-left: 17.5vw;
+      margin-left: 20vw;
       float: right;
       text-align: center;
+    }
+
+    #dona2 {
+      left: 50vw;
+    }
+
+    #dona3 {
+      top: 80vh;
+    }
+
+    .stepprecio {
+      width: 25%;
+      background-color: bisque !important;
     }
   </style>
 </head>
@@ -127,26 +146,43 @@
 <body>
   <div id="divlogo"> <img id="logo" src="logo.png" alt="YUMMY CAKE"></div>
 
-  <div id="iconosredesx"><img alt="FB" class="iconosredes" src=RSfacebook.png><img alt="TW" class="iconosredes"
-      src=RStwitter.png><img alt="IG" class="iconosredes" src="RSinstagram.png "><img alt="WA" class="iconosredes"
-      src=RSwhatsapp.png> </div>
+  <div id="iconosredesx"><a href="https://www.facebook.com"><img alt="FB" class="iconosredes" src=RSfacebook.png></a><a
+      href="https://www.twitter.com"><img alt="TW" class="iconosredes" src=RStwitter.png></a><a
+      href="https://www.instagram.com"><img alt="IG" class="iconosredes" src="RSinstagram.png "></a><a
+      href="https://www.whatsapp.com"><img alt="WA" class="iconosredes" src=RSwhatsapp.png></a> </div>
 
   <form id="frmbuscar"><input id="inputbuscar" type="text" placeholder="Buscar..." name="busqueda"><input
       id="submitbuscar" type="image" src="magnifier.png" alt="Ir"></form>
 
   <div class="topnav">
-    <a class="active" href="#minicio">Inicio</a>
-    <a href="#mmenu">Menú</a>
+    <a  href="#minicio">Inicio</a>
+    <a class="active" href="#mprod">Productos</a>
     <a href="#morden">Orden en línea</a>
     <a href="#mcontacto">Contacto</a>
     <a href="#quienes">Quiénes somos</a>
     <a href="#mpersonalizados">Personalizados</a>
   </div>
 
-  <p id="test">Hola me llamo marco</p>
 
-  <div class="divdona"> <img class="imgdona" src="donablanca.png" alt="Dona Blanca">
-    <p class="txtdona">Dona con glaseado blanco y granillo de azúcar de colores</p>
+  <div id="flexcont">
+    <div class="divdona"> <img class="imgdona" src="donablanca.png" alt="Dona Blanca">
+      <p class="txtdona">Dona con glaseado blanco y granillo de azúcar de colores<br><br> <span
+          class="precio">$900</span></p>
+      <form><input type="number" name="Precio" class="stepprecio" step="1"><input type="submit" value="Agregar"> </form>
+    </div>
+    <div class="divdona" id="dona2"> <img class="imgdona" src="donanegra.png" alt="Dona Negra">
+      <form><input type="number" name="Precio2" class="stepprecio" step="1"><input type="submit" value="Agregar">
+      </form>
+      <p class="txtdona">Dona con glaseado de chocolate y granillo de azúcar de colores<br><br> <span
+          class="precio">$900</span></p>
+    </div>
+    <div class="divdona" id="dona3"> <img class="imgdona" src="donarosa.png" alt="Dona Rosa">
+      <p class="txtdona">Dona con glaseado de fresa y granillo de azúcar de colores<br><br> <span
+          class="precio">$900</span></p>
+      <form><input type="number" name="Precio3" class="stepprecio" step="1"><input type="submit" value="Agregar">
+      </form>
+
+    </div>
   </div>
   <h1>Donas</h1>
 
