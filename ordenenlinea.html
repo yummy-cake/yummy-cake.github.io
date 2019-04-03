@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+	<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://raw.githack.com/yummy-cake/yummy-cake.github.io/master/barra.css">
+    <title>Orden en línea - Yummy Cake</title>
+    <style>
+      /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: #ff6961;
+      overflow: hidden;
+      text-align: center;
+      position: absolute;
+      top:110px;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 13px 74px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #ddd;
+      color: black;
+      border: 1px ridge black;
+      text-decoration: underline;
+    }
+    body {
+        background: rgb(255,205,155);
+      }
+      .ola{
+        position: absolute;
+        font-size: 30px;
+        top: 200px;
+        margin-left: 20px;
+      }
+      #btncompra{
+        background: lightgreen;
+        width:300px;
+        height: 70px;
+        position: absolute; 
+        top:420px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -150px;
+        left: 50%;
+      }
+      #tema{
+        color: #ff6961 ;
+        position: absolute;
+        margin-left: -150px;
+        left: 50%;
+        top: 150px;
+      }
+      #letras{
+        bottom:-100px;
+        position: absolute;
+        margin-top: 20px; 
+        text-align: center;
+        width:200px;
+        margin-left: -100px;
+        left: 50%;
+      }
+    </style>
+	</head>
+
+<body>
+    <div id="iconosredesx"><a href="https://www.facebook.com"><img alt="FB" class="iconosredes" src=https://gdurl.com/6U48></a><a
+      href="https://www.twitter.com"><img alt="TW" class="iconosredes" src=https://gdurl.com/6Q4q></a><a
+      href="https://www.instagram.com"><img alt="IG" class="iconosredes" src="https://gdurl.com/YI-R"></a><a
+      href="https://www.whatsapp.com"><img alt="WA" class="iconosredes" src=https://gdurl.com/0pGw></a> </div>
+
+  <form id="frmbuscar"><input id="inputbuscar" type="text" placeholder="Buscar..." name="busqueda"><input
+      id="submitbuscar" type="image" src="https://gdurl.com/tt9q" alt="Ir"></form>
+	<div id="divlogo">	<img id="logo" src= "https://gdurl.com/rUCA" alt="YUMMY CAKE"></div>
+	 <div class="topnav">
+  <a class="active" href="#minicio">Inicio</a>
+  <a href="#mmenu">Menú</a>
+  <a href="#morden">Orden en línea</a>
+  <a href="#mcontacto">Contacto</a>
+  <a href="#quienes">Quiénes somos</a>
+  <a href="#mpersonalizados">Personalizados</a>
+</div>
+<h1 id="tema">Orden En Linea</h1>
+<p class="ola">
+  Numero De Tarjeta<br>
+<input type="text" name="numtarjeta"><br> 
+Nombre Del Titular<br>
+<input type="text" name="nomtitular"><br>
+</p> 
+<p>
+   <button type="button" id="btncompra">Realizar Compra</button>
+</p>
+<p id="letras">2019 by YUMMY CAKE™® . All Rights Reserved.</p>
+</body>
