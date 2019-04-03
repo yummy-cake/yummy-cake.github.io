@@ -42,15 +42,6 @@
 
     }
 
-    h1 {
-      position: absolute;
-      width: 100px;
-      margin-left: -50px;
-      left: 48%;
-      top: 17vh;
-      font-size: 3em;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
 
 
     .topnav a:hover {
