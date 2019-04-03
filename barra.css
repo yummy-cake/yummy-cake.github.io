@@ -77,5 +77,6 @@
     }
     #fcont{
       position: absolute;
-      top: 17vh
+      top: 17vh;
+      width:100%;
     }
