@@ -1,2 +1,2 @@
 # yummy-cake.github.io
-jaja asi es
+no usamos flexbox por razones de estética y ser cool y hacernos notar
