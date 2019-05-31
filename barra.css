@@ -85,19 +85,7 @@
       width:100%;
     }
 
-    
-    body {
-      background-image:url(321.PNG);
-        font-family: 'Roboto Condensed', sans-serif;  
-      font-size: 16px;
-        overflow: hidden;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 1px;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
+
     .menu {
       height: 70px;
       width: 70px;
