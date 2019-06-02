@@ -35,6 +35,28 @@
 	</head>
 	
 	<body>
+			<div class='menu'>
+					<span class='toggle'>
+					  <i></i>
+					  <i></i>
+					  <i></i>
+					</span>
+					<div class='menuContent '>
+					  <ul>
+						<li><a href="menuprods.html">Inicio</a></li>
+						<li>  <a class="active" href="yumdonas.html">Productos</a>
+						</li>
+						<li>  <a href="ProcederPago.html">Orden en línea</a>
+						</li>
+						<li>  <a href="#mcontacto">Contacto</a>
+						</li>
+						<li>  <a href="pantalla_nosotros.html">Quiénes somos</a>
+						</li>
+						<li> <a href="yumpasteles.html">Personalizados</a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
 			<div id="iconosredesx"><a href="https://www.facebook.com"><img alt="FB" class="iconosredes" src=https://gdurl.com/6U48></a><a
 				href="https://www.twitter.com"><img alt="TW" class="iconosredes" src=https://gdurl.com/6Q4q></a><a
 				href="https://www.instagram.com"><img alt="IG" class="iconosredes" src="https://gdurl.com/YI-R"></a><a
@@ -42,14 +64,7 @@
 		  
 			<form id="frmbuscar"><input id="inputbuscar" type="text" placeholder="Buscar..." name="busqueda"><input
 				id="submitbuscar" type="image" src="https://gdurl.com/tt9q" alt="Ir"></form>
-		<div class="topnav">
-			<a  href="menuprods.html">Inicio</a>
-			<a href="yumdonas.html">Productos</a>
-			<a class="active" href="ProcederPago.html">Orden en linea</a>
-			<a href="#mcontacto">Contacto</a>
-			<a href="pantalla_nosotros.html">Quiénes somos</a>
-			<a href="yumpasteles.html">Personalizados</a>
-		</div>
+		 
 		<div id="divlogo">	<img id="logo" src= "https://gdurl.com/rUCA" width="200" alt="YUMMY CAKE"></div>
 <div id="fcont">
 		<h1>Orden en linea</h1>
@@ -64,5 +79,14 @@
 		<h3 id="DatEntrega">El repartidor no lleva mas de $200 de cambio></h3>
 
 	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+					  $('.toggle').on('click', function() {
+					  $('.menu').toggleClass('active');
+				  });
+					  
+				  </script>
 	</body>
 </html>

@@ -26,23 +26,6 @@
       right: 4vw;
     }
 
-    /* Add a black background color to the top navigation */
-    .topnav {
-      background-color: #ff6961;
-      overflow: hidden;
-      text-align: center;
-      position: absolute;
-      top: 13.5vh;
-    }
-
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 1.3vh 5.25vw;
-      text-decoration: none;
-      font-size: 1.23vw;
-    }
 
     #inputbuscar {
       width: 350%;
@@ -61,17 +44,7 @@
     }
 
 
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
 
-    .topnav a.active {
-      background-color: #ddd;
-      color: black;
-      border: 1px ridge black;
-      text-decoration: underline;
-    }
 
     #divlogo {
       position: absolute;
@@ -144,6 +117,28 @@
 </head>
 
 <body>
+    <div class='menu'>
+        <span class='toggle'>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+        <div class='menuContent '>
+          <ul>
+          <li><a href="menuprods.html">Inicio</a></li>
+          <li>  <a class="active" href="yumdonas.html">Productos</a>
+          </li>
+          <li>  <a href="ProcederPago.html">Orden en línea</a>
+          </li>
+          <li>  <a href="#mcontacto">Contacto</a>
+          </li>
+          <li>  <a href="pantalla_nosotros.html">Quiénes somos</a>
+          </li>
+          <li> <a href="yumpasteles.html">Personalizados</a>
+          </li>
+          </ul>
+        </div>
+        </div>
   <div id="divlogo"> <img id="logo" src="https://gdurl.com/rUCA" alt="YUMMY CAKE"></div>
 
   <div id="iconosredesx"><a href="https://www.facebook.com"><img alt="FB" class="iconosredes" src=https://gdurl.com/6U48></a><a
@@ -154,14 +149,7 @@
   <form id="frmbuscar"><input id="inputbuscar" type="text" placeholder="Buscar..." name="busqueda"><input
       id="submitbuscar" type="image" src="https://gdurl.com/tt9q" alt="Ir"></form>
 
-  <div class="topnav">
-    <a  href="menuprods.html">Inicio</a>
-    <a class="active" href="yumdonas.html">Productos</a>
-    <a href="ProcederPago.html">Orden en línea</a>
-    <a href="#mcontacto">Contacto</a>
-    <a href="pantalla_nosotros.html">Quiénes somos</a>
-    <a href="yumpasteles.html">Personalizados</a>
-  </div>
+   
 
 
   <div id="flexcont">
@@ -186,7 +174,15 @@
   </div>
   <h1>Donas</h1>
 
-
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+					  $('.toggle').on('click', function() {
+					  $('.menu').toggleClass('active');
+				  });
+					  
+				  </script>
 </body>
 
 </html>
